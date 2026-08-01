@@ -1,0 +1,27 @@
+{
+  "name": "SUSU SECURITY CO., LTD.",
+  "short_name": "SUSU Security",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon512.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#0b2545",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/"
+}
