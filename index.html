@@ -349,6 +349,26 @@
   footer .flinks{display:flex;gap:22px;}
   footer a{text-decoration:none;opacity:0.85;}
   footer a:hover{opacity:1;color:var(--blue);}
+
+  /* briefing form */
+  .brief-form{max-width:640px;margin:34px auto 0;text-align:left;}
+  .ff-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .ff{display:block;margin-bottom:14px;}
+  .ff > span{display:block;font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:7px;opacity:0.75;}
+  .ff input, .ff textarea{
+    width:100%;box-sizing:border-box;padding:13px 14px;font:inherit;font-size:0.98rem;
+    color:inherit;background:rgba(255,255,255,0.10);
+    border:1px solid rgba(255,255,255,0.35);border-radius:2px;outline:none;
+  }
+  .ff input::placeholder, .ff textarea::placeholder{color:#fff;opacity:0.55;}
+  .ff input:focus, .ff textarea:focus{border-color:#fff;background:rgba(255,255,255,0.18);}
+  .ff textarea{resize:vertical;}
+  .brief-form .btn{width:100%;text-align:center;cursor:pointer;font:inherit;font-size:0.9rem;font-weight:500;}
+  .ff-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;}
+  .ff-status{margin:14px 0 0;font-size:0.92rem;min-height:1.2em;text-align:center;}
+  .ff-status.err{color:#ffd2d5;}
+  .ff-note{margin:12px auto 0;font-size:0.86rem;opacity:0.75;text-align:center;}
+  @media (max-width:640px){ .ff-row{grid-template-columns:1fr;} }
 </style>
 </head>
 <body>
@@ -531,7 +551,31 @@
   <div class="wrap">
     <h2>Ready to Take Control of Your AI &amp; Security Risk?</h2>
     <p>Request a confidential briefing. We'll map your current exposure and show you exactly where your risk sits — in plain language, in either Thai or English.</p>
-    <a class="btn btn-solid" href="mailto:info@sususecurity.com">Request a Briefing →</a>
+    <form class="brief-form" id="brief-form" action="https://formspree.io/f/xaqrgqqe" method="POST" novalidate>
+      <div class="ff-row">
+        <label class="ff">
+          <span>Name</span>
+          <input type="text" name="name" required maxlength="100" autocomplete="name" placeholder="Your full name">
+        </label>
+        <label class="ff">
+          <span>Email</span>
+          <input type="email" name="email" required maxlength="255" autocomplete="email" placeholder="you@company.com">
+        </label>
+      </div>
+      <label class="ff">
+        <span>Phone number</span>
+        <input type="tel" name="phone" required maxlength="30" autocomplete="tel" placeholder="+66 ...">
+      </label>
+      <label class="ff">
+        <span>Short message</span>
+        <textarea name="message" rows="4" required maxlength="1000" placeholder="Tell us briefly what you'd like to discuss."></textarea>
+      </label>
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="ff-hp">
+      <input type="hidden" name="_subject" value="New briefing request - sususecurity.com">
+      <button class="btn btn-solid" type="submit">Request a Briefing &rarr;</button>
+      <p class="ff-status" id="brief-status" role="status" aria-live="polite"></p>
+      <p class="ff-note">Or email us directly at <a href="mailto:sales@sususecurity.com">sales@sususecurity.com</a>.</p>
+    </form>
   </div>
 </section>
 
@@ -548,5 +592,34 @@
   <div class="wrap" style="margin-top:14px;">© 2026 SuSu Security. All rights reserved.</div>
 </footer>
 
+<script>
+(function(){
+  var f = document.getElementById('brief-form');
+  if(!f) return;
+  var status = document.getElementById('brief-status');
+  var btn = f.querySelector('button[type=submit]');
+  f.addEventListener('submit', function(e){
+    e.preventDefault();
+    status.className = 'ff-status';
+    if(!f.checkValidity()){ f.reportValidity(); return; }
+    btn.disabled = true; status.textContent = 'Sending...';
+    fetch(f.action, { method:'POST', body:new FormData(f), headers:{ 'Accept':'application/json' } })
+      .then(function(r){
+        if(r.ok){
+          f.reset();
+          status.textContent = 'Thank you \u2014 your briefing request has been sent. We will reply shortly.';
+        } else {
+          status.className = 'ff-status err';
+          status.textContent = 'Something went wrong. Please email sales@sususecurity.com directly.';
+        }
+      })
+      .catch(function(){
+        status.className = 'ff-status err';
+        status.textContent = 'Network error. Please email sales@sususecurity.com directly.';
+      })
+      .then(function(){ btn.disabled = false; });
+  });
+})();
+</script>
 </body>
 </html>
