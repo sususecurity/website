@@ -1,5 +1,5 @@
 name: patch-favicons
-on: workflow_dispatch
+on: push
 permissions:
   contents: write
 jobs:
