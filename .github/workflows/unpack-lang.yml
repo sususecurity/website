@@ -1,0 +1,22 @@
+name: unpack-lang
+on: push
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unpack language pages
+        run: |
+          set -e
+          if [ ! -f .xfer/th.pack.b64 ]; then echo 'nothing to do'; exit 0; fi
+          mkdir -p th
+          tr -d '\n' < .xfer/th.pack.b64 | base64 -d | gunzip > th/index.html
+          tr -d '\n' < .xfer/en.pack.b64 | base64 -d | gunzip > index.html
+          rm -rf .xfer .github/workflows/unpack-lang.yml
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add -A
+          git commit -m 'Add Thai version (th/index.html) and EN/TH language switcher'
+          git push
