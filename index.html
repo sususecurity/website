@@ -15,6 +15,9 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#0b2545">
 <link rel="canonical" href="https://sususecurity.com/">
+<link rel="alternate" hreflang="en" href="https://sususecurity.com/">
+<link rel="alternate" hreflang="th" href="https://sususecurity.com/th/">
+<link rel="alternate" hreflang="x-default" href="https://sususecurity.com/">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="SuSu Security">
@@ -375,6 +378,16 @@
   .ff-status.err{color:#ffd2d5;}
   .ff-note{margin:12px auto 0;font-size:0.86rem;opacity:0.75;text-align:center;}
   @media (max-width:640px){ .ff-row{grid-template-columns:1fr;} }
+
+  .langswitch{display:flex;align-items:center;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:0.72rem;letter-spacing:0.08em;margin-left:22px;}
+  .langswitch a{text-decoration:none;opacity:0.55;transition:opacity .2s;}
+  .langswitch a:hover{opacity:1;}
+  .langswitch a.active{opacity:1;font-weight:500;border-bottom:2px solid var(--blue);padding-bottom:2px;}
+  .langswitch .sep{opacity:0.3;}
+  nav.wrap .nav-right{display:flex;align-items:center;}
+  .th-body{font-family:'Noto Sans Thai','IBM Plex Sans',sans-serif;}
+  .th-body h1,.th-body h2,.th-body h3,.th-body h4,.th-body blockquote,.th-body .brand,.th-body .stat b,.th-body .risk-card b{font-family:'Noto Sans Thai','Fraunces',serif;font-weight:700;letter-spacing:0;}
+  .th-body{line-height:1.75;}
 </style>
 </head>
 <body>
@@ -389,6 +402,7 @@
       <a href="#why">Why SuSu</a>
       <a href="#cta">Contact Us</a>
     </div>
+    <div class="langswitch" aria-label="Language"><a href="/" class="active" hreflang="en">EN</a><span class="sep">/</span><a href="/th/" hreflang="th">ไทย</a></div>
   </nav>
 </header>
 
@@ -593,6 +607,7 @@
       <a href="#markets">Markets</a>
       <a href="#why">About</a>
       <a href="#cta">Contact</a>
+      <a href="/th/" hreflang="th">ไทย</a>
     </div>
   </div>
   <div class="wrap" style="margin-top:14px;">© 2026 SuSu Security. All rights reserved.</div>

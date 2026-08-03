@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SuSu Security — ความมั่นคงปลอดภัยไซเบอร์สำหรับเอเชียตะวันออกเฉียงใต้</title>
+<meta name="description" content="SuSu Security ให้บริการประเมินความเสี่ยงด้านไซเบอร์ การกำกับดูแลการใช้ AI และที่ปรึกษาด้าน PDPA สำหรับองค์กรเอกชนและหน่วยงานภาครัฐทั่วเอเชียตะวันออกเฉียงใต้ ทั้งภาษาไทยและภาษาอังกฤษ">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon512.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/icon512.png">
+<link rel="shortcut icon" type="image/png" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/icon512.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0b2545">
+<link rel="canonical" href="https://sususecurity.com/th/">
+<link rel="alternate" hreflang="en" href="https://sususecurity.com/">
+<link rel="alternate" hreflang="th" href="https://sususecurity.com/th/">
+<link rel="alternate" hreflang="x-default" href="https://sususecurity.com/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SuSu Security">
+<meta property="og:locale" content="th_TH">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:url" content="https://sususecurity.com/th/">
+<meta property="og:title" content="SuSu Security — ความมั่นคงปลอดภัยไซเบอร์สำหรับเอเชียตะวันออกเฉียงใต้">
+<meta property="og:description" content="SuSu Security ให้บริการประเมินความเสี่ยงด้านไซเบอร์ การกำกับดูแลการใช้ AI และที่ปรึกษาด้าน PDPA สำหรับองค์กรเอกชนและหน่วยงานภาครัฐทั่วเอเชียตะวันออกเฉียงใต้ ทั้งภาษาไทยและภาษาอังกฤษ">
+<meta property="og:image" content="https://sususecurity.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SuSu Security — ความมั่นคงปลอดภัยไซเบอร์และการกำกับดูแล AI สำหรับเอเชียตะวันออกเฉียงใต้">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SuSu Security — ความมั่นคงปลอดภัยไซเบอร์สำหรับเอเชียตะวันออกเฉียงใต้">
+<meta name="twitter:description" content="SuSu Security ให้บริการประเมินความเสี่ยงด้านไซเบอร์ การกำกับดูแลการใช้ AI และที่ปรึกษาด้าน PDPA สำหรับองค์กรเอกชนและหน่วยงานภาครัฐทั่วเอเชียตะวันออกเฉียงใต้ ทั้งภาษาไทยและภาษาอังกฤษ">
+<meta name="twitter:image" content="https://sususecurity.com/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "SuSu Security",
+  "alternateName": "สู้สู้ Security",
+  "url": "https://sususecurity.com/th/",
+  "inLanguage": "th",
+  "description": "SuSu Security ให้บริการประเมินความเสี่ยงด้านไซเบอร์ การกำกับดูแลการใช้ AI และที่ปรึกษาด้าน PDPA สำหรับองค์กรเอกชนและหน่วยงานภาครัฐทั่วเอเชียตะวันออกเฉียงใต้ ทั้งภาษาไทยและภาษาอังกฤษ",
+  "email": "info@sususecurity.com",
+  "slogan": "Keep Fighting.",
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "Thailand"
+    },
+    {
+      "@type": "Country",
+      "name": "Singapore"
+    },
+    {
+      "@type": "Country",
+      "name": "Malaysia"
+    },
+    {
+      "@type": "Country",
+      "name": "Indonesia"
+    },
+    {
+      "@type": "Country",
+      "name": "Vietnam"
+    },
+    {
+      "@type": "Country",
+      "name": "Philippines"
+    },
+    {
+      "@type": "Country",
+      "name": "Hong Kong"
+    },
+    {
+      "@type": "Country",
+      "name": "Japan"
+    }
+  ],
+  "address": [
+    {
+      "@type": "PostalAddress",
+      "addressLocality": "Bangkok",
+      "addressCountry": "TH"
+    },
+    {
+      "@type": "PostalAddress",
+      "addressLocality": "Singapore",
+      "addressCountry": "SG"
+    }
+  ],
+  "knowsLanguage": [
+    "th",
+    "en"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Security & AI Governance Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Cybersecurity Risk Assessments"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AI Governance & Safe Adoption"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Regulatory Compliance Advisory"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Procurement & RFP Security Specification"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Incident Response & Resilience Planning"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Security Awareness Training"
+        }
+      }
+    ]
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+Thai:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#13141c;
+    --ink-soft:#1c1f2c;
+    --cream:#ffffff;
+    --cream-dim:#f1f2f7;
+    --red:#b3272e;
+    --purple:#7a3aa8;
+    --blue:#2f4fd6;
+    --grad: linear-gradient(135deg, var(--red) 0%, var(--purple) 52%, var(--blue) 100%);
+    --line: rgba(255,255,255,0.14);
+    --line-dark: rgba(19,20,28,0.10);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    letter-spacing:-0.01em;
+    margin:0;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    text-transform:uppercase;
+    letter-spacing:0.14em;
+    font-size:0.72rem;
+    font-weight:500;
+  }
+  .eyebrow::before{content:"— ";color:var(--red);}
+  .eyebrow::after{content:" —";color:var(--blue);}
+  a{color:inherit;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 32px;}
+  @media(max-width:640px){.wrap{padding:0 20px;}}
+
+  .grad-text{
+    background:var(--grad);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+
+  /* NAV */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(19,20,28,0.94);
+    backdrop-filter:blur(6px);
+    color:var(--cream);
+    border-bottom:1px solid var(--line);
+  }
+  nav.wrap{display:flex;align-items:center;justify-content:space-between;height:68px;}
+  .brand{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:1.15rem;
+    letter-spacing:-0.01em;
+    display:flex;align-items:baseline;gap:10px;
+  }
+  .brand .th{font-family:'Noto Sans Thai', sans-serif;font-size:1rem;}
+  .navlinks{display:flex;gap:30px;font-size:0.85rem;}
+  .navlinks a{opacity:0.78;text-decoration:none;transition:opacity .2s;}
+  .navlinks a:hover{opacity:1;}
+  .navlinks a:focus-visible, a:focus-visible{outline:2px solid var(--blue);outline-offset:3px;}
+  @media(max-width:760px){.navlinks{display:none;}}
+
+  /* HERO */
+  .hero{
+    position:relative;
+    background:var(--ink);
+    color:var(--cream);
+    overflow:hidden;
+    padding:110px 0 90px;
+  }
+  .hero .thai-mark{
+    position:absolute;
+    right:-40px; top:50%; transform:translateY(-50%);
+    font-family:'Noto Sans Thai', sans-serif;
+    font-weight:700;
+    font-size:min(38vw, 420px);
+    line-height:1;
+    pointer-events:none;
+    user-select:none;
+    white-space:nowrap;
+    opacity:0.12;
+    background:var(--grad);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+  .hero-inner{position:relative;z-index:2;max-width:760px;}
+  .hero .eyebrow{margin-bottom:22px;display:block;color:rgba(255,255,255,0.75);}
+  .hero h1{font-size:clamp(2.3rem, 5vw, 3.6rem);line-height:1.08;}
+  .hero h1 em{font-style:italic;font-weight:500;}
+  .hero h1 em.grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  .hero p.lede{
+    margin-top:22px;max-width:560px;font-size:1.08rem;color:rgba(255,255,255,0.78);
+  }
+  .cta-row{display:flex;gap:16px;margin-top:36px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;padding:13px 26px;font-size:0.9rem;font-weight:500;
+    border-radius:2px;text-decoration:none;transition:transform .15s, opacity .2s;
+    border:1px solid transparent;
+  }
+  .btn:hover{transform:translateY(-1px);}
+  .btn-solid{background:var(--grad);color:#fff;}
+  .btn-solid:hover{opacity:0.9;}
+  .btn-ghost{border-color:rgba(255,255,255,0.35);color:var(--cream);}
+  .btn-ghost:hover{border-color:var(--blue);color:#fff;}
+
+  /* STAT STRIP */
+  .stat-strip{
+    background:var(--ink-soft);
+    border-top:1px solid var(--line);
+    color:var(--cream);
+  }
+  .stat-strip .wrap{
+    display:grid;grid-template-columns:repeat(4,1fr);
+    padding:38px 32px;gap:24px;
+  }
+  @media(max-width:760px){.stat-strip .wrap{grid-template-columns:repeat(2,1fr);}}
+  .stat b{
+    font-family:'Fraunces', serif;font-size:2.1rem;display:block;font-weight:600;
+    background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .stat span{font-size:0.82rem;color:rgba(255,255,255,0.6);}
+
+  section{padding:86px 0;}
+  .section-head{max-width:640px;margin-bottom:48px;}
+  .section-head .eyebrow{color:var(--purple);display:block;margin-bottom:14px;}
+  .section-head h2{font-size:clamp(1.7rem,3.4vw,2.3rem);}
+  .section-head p{margin-top:16px;color:#4b4b57;font-size:1rem;}
+
+  /* PROBLEM */
+  .problem{background:var(--cream-dim);}
+  .risk-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);}
+  .risk-card{background:var(--cream-dim);padding:26px 20px;}
+  .risk-card b{font-family:'Fraunces',serif;font-size:1.7rem;display:block;color:var(--red);}
+  .risk-card span{font-size:0.82rem;color:#57596a;display:block;margin-top:6px;}
+  @media(max-width:900px){.risk-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:480px){.risk-grid{grid-template-columns:1fr;}}
+
+  /* SERVICES */
+  .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);}
+  .service-card{background:var(--cream);padding:34px 28px;}
+  .service-card .num{font-family:'IBM Plex Mono';font-size:0.75rem;color:var(--blue);letter-spacing:0.08em;}
+  .service-card h3{font-size:1.15rem;margin-top:14px;font-weight:600;}
+  .service-card p{font-size:0.92rem;color:#4b4b57;margin-top:10px;}
+  .service-card .tag{
+    display:inline-block;margin-top:16px;font-family:'IBM Plex Mono';font-size:0.72rem;
+    text-transform:uppercase;letter-spacing:0.08em;color:var(--red);
+  }
+  @media(max-width:900px){.service-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:600px){.service-grid{grid-template-columns:1fr;}}
+
+  /* MARKETS */
+  .markets{background:var(--ink);color:var(--cream);}
+  .markets .section-head .eyebrow{color:var(--blue);}
+  .markets .section-head p{color:rgba(255,255,255,0.72);}
+  .market-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);}
+  .market-card{background:var(--ink);padding:24px 20px;}
+  .market-card .flag{font-size:1.5rem;}
+  .market-card h4{font-family:'Fraunces';font-weight:600;margin-top:10px;font-size:1.02rem;}
+  .market-card span{font-size:0.78rem;color:rgba(255,255,255,0.5);display:block;margin-top:4px;font-family:'IBM Plex Mono';}
+  @media(max-width:760px){.market-grid{grid-template-columns:repeat(2,1fr);}}
+
+  /* WHY */
+  .why-list{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--line-dark);}
+  .why-item{
+    display:grid;grid-template-columns:60px 1fr;gap:24px;padding:28px 0;
+    border-bottom:1px solid var(--line-dark);
+  }
+  .why-item .icon{font-size:1.6rem;}
+  .why-item h3{font-size:1.1rem;font-weight:600;}
+  .why-item p{margin-top:6px;color:#4b4b57;font-size:0.94rem;max-width:600px;}
+
+  blockquote{
+    margin:56px 0 0;padding:36px 40px;background:var(--grad);color:#fff;
+    font-family:'Fraunces';font-size:1.25rem;font-style:italic;line-height:1.5;
+    border-left:4px solid #fff;
+  }
+  blockquote span{display:block;margin-top:16px;font-family:'IBM Plex Mono';font-style:normal;font-size:0.78rem;opacity:0.85;letter-spacing:0.05em;}
+
+  /* SECTORS */
+  .sectors{padding-top:0;}
+  .sector-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px;}
+  .sector-pill{
+    font-family:'IBM Plex Mono';font-size:0.78rem;padding:9px 16px;border:1px solid var(--line-dark);
+    border-radius:999px;color:#4b4b57;
+  }
+
+  /* CTA */
+  .cta{
+    background:var(--grad);color:#fff;text-align:center;
+  }
+  .cta h2{font-size:clamp(1.8rem,4vw,2.6rem);max-width:680px;margin:0 auto;color:#fff;}
+  .cta p{margin:18px auto 0;max-width:520px;color:rgba(255,255,255,0.88);}
+  .cta .btn-solid{background:var(--ink);color:#fff;margin-top:32px;}
+  .cta .btn-solid:hover{background:#2a2c3a;opacity:1;}
+
+  footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:44px 0;font-size:0.85rem;}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
+  footer .flinks{display:flex;gap:22px;}
+  footer a{text-decoration:none;opacity:0.85;}
+  footer a:hover{opacity:1;color:var(--blue);}
+
+  /* briefing form */
+  .brief-form{max-width:640px;margin:34px auto 0;text-align:left;}
+  .ff-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .ff{display:block;margin-bottom:14px;}
+  .ff > span{display:block;font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:7px;opacity:0.75;}
+  .ff input, .ff textarea{
+    width:100%;box-sizing:border-box;padding:13px 14px;font:inherit;font-size:0.98rem;
+    color:inherit;background:rgba(255,255,255,0.10);
+    border:1px solid rgba(255,255,255,0.35);border-radius:2px;outline:none;
+  }
+  .ff input::placeholder, .ff textarea::placeholder{color:#fff;opacity:0.55;}
+  .ff input:focus, .ff textarea:focus{border-color:#fff;background:rgba(255,255,255,0.18);}
+  .ff textarea{resize:vertical;}
+  .brief-form .btn{width:100%;text-align:center;cursor:pointer;font:inherit;font-size:0.9rem;font-weight:500;}
+  .ff-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;}
+  .ff-status{margin:14px 0 0;font-size:0.92rem;min-height:1.2em;text-align:center;}
+  .ff-status.err{color:#ffd2d5;}
+  .ff-note{margin:12px auto 0;font-size:0.86rem;opacity:0.75;text-align:center;}
+  @media (max-width:640px){ .ff-row{grid-template-columns:1fr;} }
+
+  .langswitch{display:flex;align-items:center;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:0.72rem;letter-spacing:0.08em;margin-left:22px;}
+  .langswitch a{text-decoration:none;opacity:0.55;transition:opacity .2s;}
+  .langswitch a:hover{opacity:1;}
+  .langswitch a.active{opacity:1;font-weight:500;border-bottom:2px solid var(--blue);padding-bottom:2px;}
+  .langswitch .sep{opacity:0.3;}
+  nav.wrap .nav-right{display:flex;align-items:center;}
+  .th-body{font-family:'Noto Sans Thai','IBM Plex Sans',sans-serif;}
+  .th-body h1,.th-body h2,.th-body h3,.th-body h4,.th-body blockquote,.th-body .brand,.th-body .stat b,.th-body .risk-card b{font-family:'Noto Sans Thai','Fraunces',serif;font-weight:700;letter-spacing:0;}
+  .th-body{line-height:1.75;}
+</style>
+</head>
+<body class="th-body">
+
+<header>
+  <nav class="wrap">
+    <div class="brand">SuSu <span class="grad-text">Security</span></div>
+    <div class="navlinks">
+      <a href="#problem">ความเสี่ยง</a>
+      <a href="#services">บริการ</a>
+      <a href="#markets">ตลาดที่ดูแล</a>
+      <a href="#why">ทำไมต้อง SuSu</a>
+      <a href="#cta">ติดต่อเรา</a>
+    </div>
+    <div class="langswitch" aria-label="Language"><a href="/" hreflang="en">EN</a><span class="sep">/</span><a href="/th/" class="active" hreflang="th">ไทย</a></div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="thai-mark">สู้</div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow">ความมั่นคงปลอดภัยไซเบอร์ &amp; การกำกับดูแล AI · เอเชียตะวันออกเฉียงใต้</span>
+    <h1>สู้สู้<br>ความมั่นคงปลอดภัยไซเบอร์ที่สร้างมาเพื่อ<em class="grad-text">เอเชียตะวันออกเฉียงใต้</em></h1>
+    <p class="lede">SuSu Security — “สู้สู้” — ช่วยองค์กรเอกชนและหน่วยงานภาครัฐในประเทศไทย สิงคโปร์ และทั่วภูมิภาค ประเมินความเสี่ยง นำ AI มาใช้อย่างปลอดภัย และผ่านการตรวจสอบในกระบวนการจัดซื้อจัดจ้าง โดยไม่ทำให้ธุรกิจสะดุด</p>
+    <div class="cta-row">
+      <a class="btn btn-solid" href="#services">ดูบริการของเรา</a>
+      <a class="btn btn-ghost" href="#cta">ขอรับการบรรยายสรุป</a>
+    </div>
+  </div>
+</section>
+
+<div class="stat-strip">
+  <div class="wrap">
+    <div class="stat"><b>8+</b><span>ตลาดในเอเชียตะวันออกเฉียงใต้และเอเชียตะวันออกที่เราดูแล</span></div>
+    <div class="stat"><b>สองภาษา</b><span>ให้บริการทั้งภาษาไทยและภาษาอังกฤษ</span></div>
+    <div class="stat"><b>ไม่กี่วัน</b><span>ก็เห็นภาพความเสี่ยงและการใช้ AI นอกระบบครั้งแรก</span></div>
+    <div class="stat"><b>ระดับ CISO</b><span>บรรยายสรุปเชิงกลยุทธ์ ไม่ใช่แค่เช็กลิสต์การปฏิบัติตามกฎ</span></div>
+  </div>
+</div>
+
+<section class="problem" id="problem">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">ความเสี่ยง</span>
+      <h2>คู่ค้า พนักงาน และเครื่องมือ AI ของคุณ กำลังวิ่งเร็วกว่ามาตรการควบคุมที่มีอยู่</h2>
+      <p>กระบวนการจัดซื้อจัดจ้าง การส่งข้อมูลข้ามพรมแดน และการใช้ AI โดยไม่ได้รับอนุญาต กำลังแซงหน้านโยบายที่ควรกำกับดูแล ขณะที่หน่วยงานกำกับในภูมิภาคจับตามองเข้มข้นขึ้นทุกไตรมาส</p>
+    </div>
+    <div class="risk-grid">
+      <div class="risk-card"><b>ไร้การกำกับ</b><span>ทีมงานในภูมิภาคใช้เครื่องมือ AI โดยที่ฝ่าย IT มองไม่เห็น</span></div>
+      <div class="risk-card"><b>ข้ามพรมแดน</b><span>การโอนข้อมูลที่เร็วกว่าการทบทวนตาม PDPA</span></div>
+      <div class="risk-card"><b>กระจัดกระจาย</b><span>ข้อกำหนดการจัดซื้อที่ตกหล่นเงื่อนไขด้านความปลอดภัย</span></div>
+      <div class="risk-card"><b>ไม่ได้แปล</b><span>นโยบายและเอกสารคู่ค้าที่พนักงานในพื้นที่เข้าใจคลาดเคลื่อน</span></div>
+      <div class="risk-card"><b>ตั้งรับ</b><span>แผนรับมือเหตุการณ์ที่สร้างขึ้นหลังถูกโจมตี ไม่ใช่ก่อน</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">บริการของเรา</span>
+      <h2>ความปลอดภัยและการกำกับดูแล AI ที่ออกแบบมาเพื่อภูมิภาคนี้</h2>
+      <p>ตั้งแต่การประเมินความเสี่ยงครั้งแรกจนถึงการบรรยายสรุปต่อผู้บริหาร เรามอบกรอบการทำงานและการสนับสนุนเชิงปฏิบัติ เพื่อให้องค์กรของคุณนำเทคโนโลยีมาใช้ได้อย่างปลอดภัย ในภาษาและบริบทกฎหมายที่ทีมของคุณทำงานอยู่จริง</p>
+    </div>
+    <div class="service-grid">
+      <div class="service-card">
+        <span class="num">01</span>
+        <h3>การประเมินความเสี่ยงด้านไซเบอร์</h3>
+        <p>ตรวจสอบโครงสร้างพื้นฐาน ระบบของคู่ค้า และการไหลของข้อมูลอย่างเป็นอิสระ เทียบกับรูปแบบภัยคุกคามในภูมิภาค</p>
+        <span class="tag">ประเมินความเสี่ยง</span>
+      </div>
+      <div class="service-card">
+        <span class="num">02</span>
+        <h3>การกำกับดูแลและการใช้ AI อย่างปลอดภัย</h3>
+        <p>กรอบนโยบายและมาตรการทางเทคนิคที่ให้พนักงานใช้ AI ได้เต็มประสิทธิภาพ โดยข้อมูลไม่รั่วไหลออกนอกองค์กร</p>
+        <span class="tag">การกำกับดูแล</span>
+      </div>
+      <div class="service-card">
+        <span class="num">03</span>
+        <h3>ที่ปรึกษาด้านการปฏิบัติตามกฎระเบียบ</h3>
+        <p>คำแนะนำเชิงปฏิบัติที่สอดคล้องกับ PDPA ของไทย PDPA ของสิงคโปร์ และกรอบกฎหมายเทียบเท่าทั่วภูมิภาค</p>
+        <span class="tag">การปฏิบัติตามกฎ</span>
+      </div>
+      <div class="service-card">
+        <span class="num">04</span>
+        <h3>ข้อกำหนดความปลอดภัยสำหรับการจัดซื้อและ RFP</h3>
+        <p>ร่างและทบทวนเอกสารประกวดราคาและข้อกำหนดทางเทคนิคแบบสองภาษา เพื่อให้ข้อกำหนดด้านความปลอดภัยไม่หายไปกับการแปล</p>
+        <span class="tag">การจัดซื้อจัดจ้าง</span>
+      </div>
+      <div class="service-card">
+        <span class="num">05</span>
+        <h3>การรับมือเหตุการณ์และการวางแผนความต่อเนื่อง</h3>
+        <p>คู่มือปฏิบัติ การซ้อมแผนบนโต๊ะ และทีมสนับสนุนพร้อมเรียก เพื่อให้ทีมของคุณรู้ว่าต้องทำอะไรก่อนเกิดเหตุ ไม่ใช่ตอนเกิดเหตุ</p>
+        <span class="tag">รับมือเหตุการณ์</span>
+      </div>
+      <div class="service-card">
+        <span class="num">06</span>
+        <h3>การอบรมสร้างความตระหนักด้านความปลอดภัย</h3>
+        <p>การอบรมที่ปรับให้เข้ากับท้องถิ่น ทั้งภาษาไทยและภาษาอังกฤษ ให้พนักงานเข้าใจว่าเครื่องมือที่ใช้ทุกวันทำอะไรกับข้อมูลของพวกเขา</p>
+        <span class="tag">การอบรม</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="markets" id="markets">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">ตลาดที่เราดูแล</span>
+      <h2>หยั่งรากในภูมิภาคที่เราให้บริการ</h2>
+      <p>เรามีฐานปฏิบัติงานที่กรุงเทพฯ และสิงคโปร์ พร้อมโครงการทั่วภูมิภาคที่กฎระเบียบเปลี่ยนแปลงเร็วที่สุด</p>
+    </div>
+    <div class="market-grid">
+      <div class="market-card"><span class="flag">🇹🇭</span><h4>ไทย</h4><span>PDPA · ETDA Guidelines</span></div>
+      <div class="market-card"><span class="flag">🇸🇬</span><h4>สิงคโปร์</h4><span>PDPA · MAS Guidelines</span></div>
+      <div class="market-card"><span class="flag">🇲🇾</span><h4>มาเลเซีย</h4><span>PDPA · BNM Guidelines</span></div>
+      <div class="market-card"><span class="flag">🇮🇩</span><h4>อินโดนีเซีย</h4><span>PDP Law · OJK Rules</span></div>
+      <div class="market-card"><span class="flag">🇻🇳</span><h4>เวียดนาม</h4><span>Decree 13 · Cybersecurity Law</span></div>
+      <div class="market-card"><span class="flag">🇵🇭</span><h4>ฟิลิปปินส์</h4><span>Data Privacy Act · NPC Rules</span></div>
+      <div class="market-card"><span class="flag">🇭🇰</span><h4>ฮ่องกง</h4><span>PDPO · SFC · HKMA</span></div>
+      <div class="market-card"><span class="flag">🇯🇵</span><h4>ญี่ปุ่น</h4><span>APPI · METI AI Guidelines</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">ทำไมต้อง SuSu Security</span>
+      <h2>พันธมิตรที่สร้างมาเพื่อภูมิภาคนี้</h2>
+    </div>
+    <div class="why-list">
+      <div class="why-item">
+        <span class="icon">🥊</span>
+        <div><h3>เอเชียตะวันออกเฉียงใต้มาก่อน</h3><p>เราทำงานอยู่ในพื้นที่จริงทั้งกรุงเทพฯ และสิงคโปร์ ไม่ใช่บริษัทระดับโลกที่เพิ่งมาตั้งทีมภูมิภาค</p></div>
+      </div>
+      <div class="why-item">
+        <span class="icon">🗣️</span>
+        <div><h3>สองภาษาอย่างแท้จริง</h3><p>เอกสาร การอบรม และการเจรจา ดำเนินการทั้งภาษาไทยและภาษาอังกฤษ เพื่อไม่ให้สาระสำคัญตกหล่นระหว่างห้องประชุมผู้บริหารกับฝ่ายจัดซื้อ</p></div>
+      </div>
+      <div class="why-item">
+        <span class="icon">🤖</span>
+        <div><h3>ออกแบบมาเพื่อยุค AI</h3><p>ระเบียบวิธีของเรารับมือความเสี่ยงจาก Generative AI และการใช้ AI นอกระบบโดยตรง ไม่ใช่การดัดแปลงจากแนวคิด DLP แบบเดิม</p></div>
+      </div>
+      <div class="why-item">
+        <span class="icon">⚡</span>
+        <div><h3>พร้อมใช้งานได้เร็ว</h3><p>เห็นภาพความเสี่ยงและเริ่มมีมาตรการควบคุมภายในไม่กี่วันหลังเริ่มงาน เพราะคณะกรรมการต้องการคำตอบวันนี้ ไม่ใช่ไตรมาสหน้า</p></div>
+      </div>
+      <div class="why-item">
+        <span class="icon">🤝</span>
+        <div><h3>พันธมิตรระดับผู้บริหาร</h3><p>เราบรรยายสรุปในระดับ CISO และคณะกรรมการ พร้อมคำแนะนำเชิงกลยุทธ์อย่างต่อเนื่องเมื่อภัยคุกคามในภูมิภาคเปลี่ยนไป</p></div>
+      </div>
+    </div>
+
+    <blockquote>
+      “สู้สู้” คือมาตรฐานที่เรายึดถือในทุกโครงการ และยังคงอยู่กับลูกค้าต่อไป แม้การประเมินครั้งแรกจะเสร็จสิ้นแล้ว
+      <span>SuSu Security</span>
+    </blockquote>
+  </div>
+</section>
+
+<section class="sectors">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">อุตสาหกรรมที่เราให้บริการ</span>
+      <h2>ได้รับความไว้วางใจจากอุตสาหกรรมที่มีการกำกับดูแลเข้มงวด</h2>
+    </div>
+    <div class="sector-row">
+      <span class="sector-pill">ภาครัฐและหน่วยงานราชการ</span>
+      <span class="sector-pill">บริการทางการเงิน</span>
+      <span class="sector-pill">การผลิต</span>
+      <span class="sector-pill">กฎหมายและบริการวิชาชีพ</span>
+      <span class="sector-pill">เทคโนโลยี</span>
+      <span class="sector-pill">ค้าปลีกและอีคอมเมิร์ซ</span>
+      <span class="sector-pill">สาธารณสุขและการแพทย์</span>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="cta">
+  <div class="wrap">
+    <h2>พร้อมควบคุมความเสี่ยงด้าน AI และความปลอดภัยขององค์กรคุณหรือยัง?</h2>
+    <p>ขอรับการบรรยายสรุปแบบเป็นความลับ เราจะประเมินความเสี่ยงปัจจุบันของคุณ และชี้ให้เห็นว่าจุดเสี่ยงอยู่ตรงไหน ด้วยภาษาที่เข้าใจง่าย ทั้งภาษาไทยและภาษาอังกฤษ</p>
+    <form class="brief-form" id="brief-form" action="https://formspree.io/f/xaqrgqqe" method="POST" novalidate>
+      <div class="ff-row">
+        <label class="ff">
+          <span>ชื่อ-นามสกุล</span>
+          <input type="text" name="name" required maxlength="100" autocomplete="name" placeholder="ชื่อ-นามสกุลของคุณ">
+        </label>
+        <label class="ff">
+          <span>อีเมล</span>
+          <input type="email" name="email" required maxlength="255" autocomplete="email" placeholder="you@company.com">
+        </label>
+      </div>
+      <label class="ff">
+        <span>เบอร์โทรศัพท์</span>
+        <input type="tel" name="phone" required maxlength="30" autocomplete="tel" placeholder="+66 ...">
+      </label>
+      <label class="ff">
+        <span>ข้อความสั้น ๆ</span>
+        <textarea name="message" rows="4" required maxlength="1000" placeholder="บอกเราสั้น ๆ ว่าคุณต้องการปรึกษาเรื่องใด"></textarea>
+      </label>
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="ff-hp">
+      <input type="hidden" name="_subject" value="New briefing request (TH) - sususecurity.com">
+      <input type="hidden" name="language" value="Thai">
+      <button class="btn btn-solid" type="submit">ขอรับการบรรยายสรุป &rarr;</button>
+      <p class="ff-status" id="brief-status" role="status" aria-live="polite"></p>
+      <p class="ff-note">หรืออีเมลหาเราโดยตรงที่ <a href="mailto:sales@sususecurity.com">sales@sususecurity.com</a></p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand" style="color:#fff;">SuSu <span class="grad-text">Security</span></div>
+    <div class="flinks">
+      <a href="#services">บริการ</a>
+      <a href="#markets">ตลาดที่ดูแล</a>
+      <a href="#why">เกี่ยวกับเรา</a>
+      <a href="#cta">ติดต่อ</a>
+      <a href="/" hreflang="en">English</a>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:14px;">© 2026 SuSu Security สงวนลิขสิทธิ์</div>
+</footer>
+
+<script>
+(function(){
+  var f = document.getElementById('brief-form');
+  if(!f) return;
+  var status = document.getElementById('brief-status');
+  var btn = f.querySelector('button[type=submit]');
+  f.addEventListener('submit', function(e){
+    e.preventDefault();
+    status.className = 'ff-status';
+    if(!f.checkValidity()){ f.reportValidity(); return; }
+    btn.disabled = true; status.textContent = 'กำลังส่ง...';
+    fetch(f.action, { method:'POST', body:new FormData(f), headers:{ 'Accept':'application/json' } })
+      .then(function(r){
+        if(r.ok){
+          f.reset();
+          status.textContent = 'ขอบคุณค่ะ \u2014 ส่งคำขอเรียบร้อยแล้ว เราจะติดต่อกลับโดยเร็ว';
+        } else {
+          status.className = 'ff-status err';
+          status.textContent = 'เกิดข้อผิดพลาด กรุณาอีเมลถึง sales@sususecurity.com โดยตรง';
+        }
+      })
+      .catch(function(){
+        status.className = 'ff-status err';
+        status.textContent = 'การเชื่อมต่อขัดข้อง กรุณาอีเมลถึง sales@sususecurity.com โดยตรง';
+      })
+      .then(function(){ btn.disabled = false; });
+  });
+})();
+</script>
+</body>
+</html>
